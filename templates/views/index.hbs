@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <form id="form1">
+        <input type="hidden" id="unqIdInput" value={{userName}}>
+        
+    </form>
+    
+    <form id="form2">
+        <input  id="searchButtonInput" placeholder="Search by Id">
+        <input type="submit" id="searchButton" value="Request for a call">
+        
+    </form>
+    <form id="form4" style="display: none">
+        <p id="para1">Would you like to accept a call from <b id="dynamicName"></b></p>
+        <button id="yesButton">Yes</button>
+        <button id='noButton'>No</button>
+    </form> 
+    
+    <form id="form3" style="display: none">
+        <video id="localVideo" autoplay></video>
+        <video id="remoteVideo" autoplay></video>
+        <button id="hangUp">Hang Up</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/indexPageJs.js"></script>
+</body>
